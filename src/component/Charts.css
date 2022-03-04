@@ -1,0 +1,71 @@
+.charts {
+    margin-top: 2rem;
+    max-width: 1200px;
+    padding: 2rem 5rem;
+    align-items: center;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .charts {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .charts {
+        max-width: 550px;
+    }
+
+    .chartWidth {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .charts {
+        max-width: 450px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chart {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rate1 {
+        margin-left: 32px;
+    }
+
+    .rate2 {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .charts {
+        max-width: 300px;
+        margin-left: 4.2rem;
+    }
+
+    .chart {
+        justify-content: space-evenly;
+        padding: unset;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}

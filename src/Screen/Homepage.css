@@ -1,0 +1,14 @@
+.homepage {
+    flex: 8;
+    padding-left: 5rem;
+}
+
+.widgets {
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .widgets {
+        display: unset;
+    }
+}

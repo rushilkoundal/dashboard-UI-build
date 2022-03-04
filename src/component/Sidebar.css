@@ -1,0 +1,36 @@
+.sidebar {
+    position: fixed;
+    background: rgb(252, 252, 252);
+    height: 100%;
+}
+
+.sidebar .sidebarList {
+    margin: 15px;
+}
+
+button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: .1em;
+    border-radius: 2px;
+}
+
+.link {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    color: rgb(19, 68, 231);
+}
+
+.sidebar .active {
+    background: white;
+}

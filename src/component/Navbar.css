@@ -1,0 +1,13 @@
+.navbar {
+    padding: 2rem 4rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,38 @@
+.signinscreen {
+    max-width: 600px;
+    padding: 70px;
+    margin-top: 160px;
+    margin-left: 35%;
+    background: rgba(247, 246, 246, 0.85)
+}
+
+.signinscreen form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signinscreen form h2{
+    font-size: 2.2rem;
+    color: black;
+}
+
+.signinscreen form input {
+    outline-width: 0;
+    border: none;
+    height: 40px;
+    margin-bottom: 14px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    
+}
+
+.signinscreen form button {
+    margin-top: 20px;
+    background: rgb(236, 229, 229);
+    color: black;
+    outline-width: 0;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}

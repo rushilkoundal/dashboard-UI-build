@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './component/Sidebar';
+import AnalyticsScreen from './Screen/AnalyticsScreen';
+import Homepage from './Screen/Homepage';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import TradingScreen from './Screen/TradingScreen';
+import NotificationScreen from './Screen/NotificationScreen';
+import LoginScreen from './Screen/LoginScreen';
+import { useAuth } from './firebase';
 
 function App() {
+  let user = useAuth();
+  console.log(user);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        {(!user) ? (
+          <LoginScreen />
+        ) : (
+          <>
+            <Sidebar />
+            <Routes>
+              <Route path="/dashboard" exact element={<Homepage />}></Route>
+              <Route path="/analytics" exact element={<AnalyticsScreen />}></Route>
+              <Route path="/trading" exact element={<TradingScreen />}></Route>
+              <Route path="/notification" exact element={<NotificationScreen />}></Route>
+            </Routes>
+          </>
+        )}
+      </Router>
     </div>
   );
 }

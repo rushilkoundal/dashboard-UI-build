@@ -1,0 +1,34 @@
+.widgetR {
+    flex: 1.5;
+    margin-top: 30px;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: 70% auto;
+}
+
+.progressBar {
+    margin-top: 10px;
+    max-width: 90%;
+    padding: 0.7em;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+.button {
+    color: rgb(31, 97, 241);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .widgetR {
+        padding-left: 5rem;
+        padding-right: 1.5rem;
+    }
+}
+
