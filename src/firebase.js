@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import { getAuth, signOut, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth'
 import { useState, useEffect } from 'react';
 

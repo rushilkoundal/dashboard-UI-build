@@ -6,7 +6,7 @@ import AttachMoneyRoundedIcon from '@mui/icons-material/AttachMoneyRounded';
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import { Link } from 'react-router-dom';
-import { logOut, useAuth } from '../firebase';
+import { logOut } from '../firebase';
 
 function Sidebar() {
     const [show, setShow] = useState(false);
